@@ -44,3 +44,13 @@ cd ..\client
 rmdir /s /q .git
 
 ---
+
+## How to add a new branch in Git, do some changes and than merge this branch with the main branch
+
+1. Create a new branch: git checkout -b feature-branch  
+2. Stage changes: git add .  
+3. Commit changes: git commit -m "Add new feature..."  
+4. Switch back to the main branch: git checkout main  
+5. Merge the feature branch into the main branch: git merge feature-branch  
+6. Push the changes to the remote repository: git push origin main  
+7. Delete the feature branch if it's no longer needed: git branch -d feature-branch  
