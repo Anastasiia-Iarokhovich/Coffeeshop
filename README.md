@@ -25,22 +25,22 @@ This project implements a coffeeshop.
 
 ## Add api and client subdirectories to main repository
 
-cd ..\Coffeeshop
-git init
-git add .
-git commit -m "init project"
-git branch -M main
-git remote add origin https://github.com/Anastasiia-Iarokhovich/Coffeeshop.git
-git push -u origin main
+cd ..\Coffeeshop  
+git init  
+git add .  
+git commit -m "init project"  
+git branch -M main  
+git remote add origin https://github.com/Anastasiia-Iarokhovich/Coffeeshop.git  
+git push -u origin main  
 
 ---
 
 ## Remove .git directory in api
-cd ..\api
+cd ..\api  
 rmdir /s /q .git
 
 ## Remove .git directory in client
-cd ..\client
+cd ..\client  
 rmdir /s /q .git
 
 ---
