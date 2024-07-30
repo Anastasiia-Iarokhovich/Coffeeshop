@@ -13,12 +13,19 @@ This project implements a coffeeshop.
 
 ## Commands
 
-| Command              | Description                              | 
-|----------------------|------------------------------------------|
-| docker-compose up    | Starts PostgreSQL database and pgAdmin   |
-| dotnet watch run     | Starts the backend server                |
-| ng serve             | Starts the client-side application       |
-| npm test             | Runs the test suite                      |
+| Command                                   | Description                                              | 
+|-------------------------------------------|----------------------------------------------------------|
+| docker-compose up                         | Starts PostgreSQL database and pgAdmin                   |
+| dotnet watch run                          | Starts the backend server                                |
+| ng serve                                  | Starts the client-side application                       |
+| ng test                                   | Runs the test suite                                      |
+| dotnet ef migrations add name...          | Creates a new migration in Entity Framework Core         |
+| dotnet ef database update                 | Updates the database                                     |
+| dotnet add package packagename...         | Adds a NuGet package to the project                      |
+| dotnet add reference path/to/proj.csproj  | Adds a reference to another project within the solution  |
+| dotnet build                              | Compiles the project and its dependencies                |
+| dotnet sln add path/to/proj.csproj        | Adds a project or multiple projects to a solution file   |
+| dotnet new classlib                       | Creates a new .NET class library project                 |
 
 
 ---
