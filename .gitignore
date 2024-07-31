@@ -1,0 +1,68 @@
+# .NET Core
+*.DS_Store
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.sln.cache
+*.sln.docstates
+*.sln.cache
+*.sln.settings
+*.sln.docstates
+*.sln.cache
+*.sln.docstates
+*.sln.cache
+*.sln.settings
+
+# Visual Studio
+.vscode/
+*.dbmdl
+*.jfm
+*.pdb
+*.psess
+*.vspx
+*.vspxrun
+*.cache
+*.css.map
+*.js.map
+
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.dll
+*.pdb
+*.config
+*.log
+
+# Angular
+node_modules/
+dist/
+tmp/
+!src/assets/
+!src/environments/
+
+# Angular Coverage Reports
+coverage/
+
+# Angular Compiled Files
+out-tsc/
+
+# Environment Files
+src/environments/*.ts
+!src/environments/environment.ts
+!src/environments/environment.prod.ts
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+
