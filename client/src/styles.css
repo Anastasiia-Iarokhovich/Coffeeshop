@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --background-shop: #5C4747;
+    --background-card: #6F5858;
+    --background-cart: #FFFFFF;
+    --background-btn: #EECAB1;
+
+    --border: .2rem solid #908E8E;
+
+    --font-white: #FFF;
+    --font-orange: #DEACAC;
+
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none; 
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--background-shop);
+}
+
+a {
+    text-decoration: none;
+}
+
+section{
+    padding: 2rem 7%;
+}
