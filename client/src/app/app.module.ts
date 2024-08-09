@@ -8,6 +8,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NavComponent } from './nav/nav.component';
 import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { AccountService } from './services/account.service';
 
 
 @NgModule({
@@ -20,9 +22,10 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [HttpClient],
+  providers: [HttpClient, AccountService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
