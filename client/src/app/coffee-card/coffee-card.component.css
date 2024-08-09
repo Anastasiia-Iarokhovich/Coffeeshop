@@ -1,0 +1,30 @@
+.coffee-card {
+    padding: 2rem 4rem 2rem 4rem;
+    text-align: center;
+    border: var(--border-color);  
+    border-radius: 0.6rem;
+    background-color: var(--background-card);
+}
+
+.coffee-card__img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.coffee-card__heading {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.coffee-card__price {
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.coffee-card:hover {
+    transform: scale(1.05);
+}

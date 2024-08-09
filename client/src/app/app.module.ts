@@ -10,6 +10,9 @@ import { LoginComponent } from './login/login.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { AccountService } from './services/account.service';
+import { CoffeeCardComponent } from './coffee-card/coffee-card.component';
+import { CartComponent } from './cart/cart.component';
+import { CartService } from './services/cart.service';
 
 
 @NgModule({
@@ -17,7 +20,9 @@ import { AccountService } from './services/account.service';
     AppComponent,
     NavComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    CoffeeCardComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,7 @@ import { AccountService } from './services/account.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [HttpClient, AccountService],
+  providers: [HttpClient, AccountService, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

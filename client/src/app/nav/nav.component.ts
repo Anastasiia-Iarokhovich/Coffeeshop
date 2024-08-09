@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  private cartService: CartService
+
+  constructor(cartService: CartService) 
+  {
+    this.cartService = cartService;
+  }
 
   ngOnInit(): void {
+  }
+
+  toggleCart() {
+    this.cartService.toggleCart();
   }
 
 }
