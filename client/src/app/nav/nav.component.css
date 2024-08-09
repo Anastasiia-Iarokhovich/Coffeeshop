@@ -1,18 +1,17 @@
-
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 7%;
-    border-bottom: var(--border);
+    border-bottom: 0.2rem solid var(--border-color);   
 }
 
 .header__logo-img{
-    height: 6rem;
+    height: 4.5rem;
 }
 
 .header__icons-icon{
-    color: var(--font-white);
+    color: var(--font-black);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;

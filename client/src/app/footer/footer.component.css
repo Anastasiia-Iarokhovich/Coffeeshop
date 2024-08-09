@@ -1,0 +1,34 @@
+.footer{
+    text-align: center;
+    /* border-top: 0.1rem solid var(--border-color);  */
+}
+
+.footer__share{
+    padding-bottom: 1rem;
+}
+
+.footer__share-icon{
+    height: 3.3rem;
+    width: 3.3rem;
+    line-height: 3.3rem;
+    font-size: 1.5rem;
+    color: var(--font-white);
+    margin-left: .3rem;
+    margin-right: .3rem;
+    border-radius: 50%;
+    background: var(--font-orange);
+}
+
+.footer__share-icon:hover{
+    background-color: rosybrown;
+}
+
+.footer__info{
+    font-size: 1.5rem;
+    color: var(--font-black);
+    font-weight: lighter;
+}
+
+.footer__info--orange{
+    color: var(--font-orange);
+}
