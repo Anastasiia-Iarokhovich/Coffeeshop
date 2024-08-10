@@ -1,11 +1,11 @@
-.login {
+.register {
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.login__inputBox {
+.register__inputBox {
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,28 +15,27 @@
     padding: 0.5rem;
 }
 
-.login__inputBox-icon {
+.register__inputBox-icon {
     font-size: 2rem;
     color: var(--font-black);
 }
 
-.login__inputBox-inputfield {
+.register__inputBox-inputfield {
     padding: 0.7rem;
     font-size: 1.5rem;
     text-transform: none;
 }
 
-.login__error {
+.register__error {
     color: red;
 }
 
-.login__toRegister {
+.register__toRegister {
     margin-top: 1rem;
     display: inline-block; 
     color: var(--font-black);
 }
 
-.login__toRegister:hover {
+.register__toRegister:hover {
     text-decoration: underline;
 }
-

@@ -8,11 +8,14 @@ import { AccountService } from '../services/account.service';
 })
 export class LoginComponent implements OnInit {
 
-  private accountService = inject(AccountService);
-  loggedIn = false;
+  private accountService: AccountService;
+
   model: any = {};
 
-  constructor() { }
+  constructor(accountService: AccountService) 
+  { 
+    this.accountService = accountService;
+  }
 
   ngOnInit(): void {
   }
@@ -20,11 +23,9 @@ export class LoginComponent implements OnInit {
   login() {
     this.accountService.login(this.model).subscribe({
       next: response => {
-        console.log(response);
-        this.loggedIn = true;
+        console.log('Login erfolgreich', response);
       },
-      error: error => console.log(error)
-    })
+      error: error => console.log('Login fehlgeschlagen', error)
+    });
   }
-
 }

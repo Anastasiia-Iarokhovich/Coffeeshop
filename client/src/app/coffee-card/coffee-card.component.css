@@ -3,7 +3,8 @@
     text-align: center;
     border: var(--border-color);  
     border-radius: 0.6rem;
-    background-color: var(--background-card);
+    background-color: rgb(176, 163, 148);
+    margin-bottom: 1rem;
 }
 
 .coffee-card__img {

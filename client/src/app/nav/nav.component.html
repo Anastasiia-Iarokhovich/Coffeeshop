@@ -4,13 +4,17 @@
         <img class="header__logo-img" src="assets/images/Coffeeshop.png" alt="Logo">
     </a>
 
-    <div class="header__icons">
+    <div class="header__icons" *ngIf="loggedIn">
+        <span class="header__welcome">
+            Welcome, <span class="header__welcome--orange">{{ username }}!</span>
+        </span>
+
         <span class="header__icons-icon material-symbols-outlined" id="cart-btn" (click)="toggleCart()"> 
             shopping_cart
         </span>
 
-        <span class="header__icons-icon material-symbols-outlined">
-            account_circle
+        <span class="header__icons-icon material-symbols-outlined" (click)="logout()">
+            logout
         </span>
     </div>
 

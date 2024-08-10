@@ -1,0 +1,10 @@
+<section class="coffee-list" *ngIf="loggedIn">
+    <app-coffee-card 
+      *ngFor="let coffee of coffees"
+      [name]="coffee.name"
+      [price]="coffee.price"
+      [image]="coffee.image">
+    </app-coffee-card>
+</section>
+  
+  

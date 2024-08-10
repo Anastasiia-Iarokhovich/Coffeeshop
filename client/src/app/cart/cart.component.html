@@ -1,4 +1,4 @@
-<div [class.active]="cartVisible"  class="cart-container">
+<div [class.active]="cartVisible"  class="cart-container" *ngIf="loggedIn">
 
     <div class="cart-container__item">
         <img class="cart-container__item-img" src="./assets/images/cof8.png" alt="">

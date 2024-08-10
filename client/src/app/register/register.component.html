@@ -1,18 +1,18 @@
-<section class="login">
+<section class="register">
 
-    <h3 class="heading">Login</h3>
+    <h3 class="heading">registration</h3>
     
-    <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
-        <div class="login__inputBox">
+    <form #registerForm="ngForm" (ngSubmit)="register()" autocomplete="off">
+        <div class="register__inputBox">
 
-            <span class="login__inputBox-icon material-symbols-outlined">
+            <span class="register__inputBox-icon material-symbols-outlined">
                 mail
             </span>
 
             <input 
                 name="username"                  
                 [(ngModel)]="model.username" 
-                class="login__inputBox-inputfield" 
+                class="register__inputBox-inputfield" 
                 type="text"
                 placeholder="Username"
                 required
@@ -20,20 +20,19 @@
             >
         </div>
 
-        <div *ngIf="username.invalid && username.touched" class="login__error">
+        <div *ngIf="username.invalid && username.touched" class="register__error">
             <small *ngIf="username.errors?.['required']">Username is required.</small>
-            <!-- <small *ngIf="email.errors?.['email']">Please enter a valid email address.</small> -->
         </div>
 
-        <div class="login__inputBox">
-            <span class="login__inputBox-icon material-symbols-outlined">
+        <div class="register__inputBox">
+            <span class="register__inputBox-icon material-symbols-outlined">
                 lock
             </span>
 
             <input 
                 name="password"                  
                 [(ngModel)]="model.password" 
-                class="login__inputBox-inputfield" 
+                class="register__inputBox-inputfield" 
                 type="password" 
                 placeholder="Password"
                 required
@@ -42,13 +41,12 @@
             >
         </div>
 
-        <div *ngIf="password.invalid && password.touched" class="login__error">
+        <div *ngIf="password.invalid && password.touched" class="register__error">
             <small *ngIf="password.errors?.['required']">Password is required.</small>
             <small *ngIf="password.errors?.['minlength']">Password must be at least 6 characters long.</small>
         </div>
 
-        <input type="submit" value="log me in" class="btn" [disabled]="loginForm.invalid">
+        <input type="submit" value="create your account" class="btn" [disabled]="registerForm.invalid">
     </form>
     
-    <a class="login__toRegister" [routerLink]="['/register']">Don't have an account? Sign up here.</a>
 </section>

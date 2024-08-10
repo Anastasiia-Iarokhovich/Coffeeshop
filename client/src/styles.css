@@ -58,11 +58,11 @@ section{
     border-radius: 0.3rem; 
     font-size: 1.5rem; 
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: letter-spacing 0.3s ease;
     text-align: center;
     margin-top: 1.5rem;
 }
 
 .btn:hover {
-    background-color: var(--font-orange);
+    letter-spacing: 0.10rem;
 }
