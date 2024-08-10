@@ -9,7 +9,7 @@
 
     --font-white: #FFF;
     --font-orange: #DEACAC;
-    --font-black: #333;
+    --font-black: rgb(61, 61, 61);
 }
 
 *{
@@ -46,7 +46,7 @@ section{
 .heading {
     margin-bottom: 2rem;
     font-size: 2.4rem;
-    color: var(--font-grey);
+    color: var(--font-black);
 }
 
 .btn {
