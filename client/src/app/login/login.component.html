@@ -2,7 +2,7 @@
 
     <h3 class="heading">Login</h3>
     
-    <form #liginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
+    <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
         <div class="login__inputBox">
 
             <span class="login__inputBox-icon material-symbols-outlined">
@@ -10,13 +10,20 @@
             </span>
 
             <input 
-                name="username"                  
-                [(ngModel)]="model.username" 
+                name="email"                  
+                [(ngModel)]="model.email" 
                 class="login__inputBox-inputfield" 
                 type="email" 
                 placeholder="Email"
+                required
+                email
+                #email="ngModel"
             >
+        </div>
 
+        <div *ngIf="email.invalid && email.touched" class="login__error">
+            <small *ngIf="email.errors?.['required']">Email is required.</small>
+            <small *ngIf="email.errors?.['email']">Please enter a valid email address.</small>
         </div>
 
         <div class="login__inputBox">
@@ -30,10 +37,18 @@
                 class="login__inputBox-inputfield" 
                 type="password" 
                 placeholder="Password"
+                required
+                minlength="6"
+                #password="ngModel"
             >
         </div>
 
-        <input type="submit" value="log me in" class="btn">
+        <div *ngIf="password.invalid && password.touched" class="login__error">
+            <small *ngIf="password.errors?.['required']">Password is required.</small>
+            <small *ngIf="password.errors?.['minlength']">Password must be at least 6 characters long.</small>
+        </div>
+
+        <input type="submit" value="log me in" class="btn" [disabled]="loginForm.invalid">
     </form>
     
 </section>
